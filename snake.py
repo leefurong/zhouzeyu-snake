@@ -1,5 +1,6 @@
 import pgzrun
 import pygame,time,random
+from tkinter import*
 from pygame.locals import*
 pygame.init()
 pygame.display.set_caption('贪吃蛇游戏')
@@ -85,6 +86,10 @@ class Eat:
     def draw(self):
         for a in self.actors:
             a.draw()
+class Top:
+    def __init__(self):
+        self.w=Tk()
+        self.w.geometry()
 s=Snake()
 e=Eat()
 def update():
